@@ -158,6 +158,21 @@
                             </nav>
                         </div>
                         <!-- FIN COLLAPSE MODULO GESTION DE INVENTARIO-------------------------------------------------------------->
+                        <!-- INICIO COLLAPSE MODULO DOCUMENTOS ACADEMICOS-------------------------------------------------------------->
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#docacademicos" aria-expanded="false" aria-controls="docacademicos">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            Documentos Academicos
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="docacademicos" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="../documentosacademicos/generarPlanUnidad.php">Generar Plan de Unidad</a>
+                                <a class="nav-link" href="../documentosacademicos/pendientes.php">Planes de Unidad Pendientes</a>
+                                <a class="nav-link" href="../documentosacademicos/aprobados.php">Planes de Unidad Aprobados</a>
+                                <a class="nav-link" href="../documentosacademicos/rechazados.php">Planes de Unidad Rechazados</a>
+                            </nav>
+                        </div>
+                        
 
 
                         <!--FIN NUEVAS LINKS IRFEYAL---------------------------------------------------------->
