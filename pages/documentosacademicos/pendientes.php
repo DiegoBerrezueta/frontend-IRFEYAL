@@ -16,10 +16,9 @@
                         <p>Ingrese un dato a filtrar.</p>
                         <input class="form-control" id="myInput" type="text" placeholder="Buscar..">
                         <br>
-                        <table class="table table-bordered table-hover table-responsive" id="contenidoPendientes">
+                        <table class="table table-bordered table-hover table-responsive">
                             <thead>
                                 <tr>
-                                    <th scope="col">Id</th>
                                     <th scope="col">Titulo</th>
                                     <th scope="col">Fecha_Inicio</th>
                                     <th scope="col">Fecha_Fin</th>
@@ -27,30 +26,9 @@
                                     <th scope="col">Estado</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="contenidoPendientes">
                                 <tr>
-                                    <td>1</td>
-                                    <td>artes</td>
-                                    <td>01/02/2022</td>
-                                    <td>01/03/2022</td>
-                                    <td>Unidad 1</td>
-                                    <td>Pendiente</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Ciencias</td>
-                                    <td>01/03/2022</td>
-                                    <td>01/04/2022</td>
-                                    <td>Unidad 1</td>
-                                    <td>Aprobado</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Sociales</td>
-                                    <td>01/04/2022</td>
-                                    <td>01/05/2022</td>
-                                    <td>Unidad 2</td>
-                                    <td>Rechazado</td>
+                                    <td></td>
                                 </tr>
                             </tbody>
 
@@ -140,4 +118,4 @@
     </main>
 
 <?php include '../includes/footer.php' ?>
-<script src="../documentosacademicos/index.js"></script>
+<script src="../documentosacademicos/JSpendientes.js"></script>

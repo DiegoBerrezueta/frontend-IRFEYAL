@@ -25,9 +25,11 @@
                                         </select>
                                         <br></br>
                                         <label for="lb_unidad">Elegir Unidad:</label>
+                                    
                                         <select name="combo_unidad" id="select_unidad" class="form-select">
-                                            <option value="1">selec</option>
+                                            <option></option>
                                         </select>
+                                        
                                     </div>
                                     <div class="col-sm-9 container">
                                         <div class="row">
@@ -104,3 +106,4 @@
     </main>
 
 <?php include '../includes/footer.php' ?>
+<script src="../documentosacademicos/JSgenerar.js"></script>
