@@ -21,11 +21,13 @@ function cargarSelect(select_unidades) {
             /* recorro */
             $.each(data, function (i, item) {
                 /* cargo la info en option del select */
+                var option1 = $("<option disabled selected hidden></option>").append("Seleccione");
                 var option = $("<option></option>").append(
-                    /* item, toma el nombre de la columna de la BD; en este caso solo saco el nombre de la unidad*/
+                    /* item, toma el nombre de la columna de la BD*/
                     item.nombre_unidad
                 );
                 /* cargo al select la option*/
+                select_unidades.append(option1);
                 select_unidades.append(option);
             });
         },
@@ -34,4 +36,14 @@ function cargarSelect(select_unidades) {
             alert("error");
         },
     });
+}
+
+/*Funcion para obtener el valor del select Unidades*/
+function obtenerSelectUnidad() {
+    var seleccion = document.getElementById("select_unidad").value;
+    document.getElementById("id_txtunidad").value = seleccion;
+}
+
+function generar_plan() {
+    alert("En proceso");
 }

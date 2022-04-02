@@ -19,11 +19,13 @@
                         <table class="table table-bordered table-hover table-responsive">
                             <thead>
                                 <tr>
+                                    <th scope="col">Id</th>
                                     <th scope="col">Titulo</th>
                                     <th scope="col">Fecha_Inicio</th>
                                     <th scope="col">Fecha_Fin</th>
                                     <th scope="col">No_Unidad</th>
                                     <th scope="col">Estado</th>
+                                    <th scope="col">Abrir</th>
                                 </tr>
                             </thead>
                             <tbody id="contenidoPendientes">
@@ -49,18 +51,30 @@
                                 <div class="row">
                                     <div class="col-sm-4">
                                         <label for="lb_f_inicio">Fecha de inicio:</label>
-                                        <input type="date" name="date" id="fechaIni" min="<?php echo date("(Y-m-d)");?>"  class="form-control" disabled><br>
+                                        <input type="text" name="finicio" id="id_fechaIni" value="" class="form-control" style="text-align:center;" disabled required><br>
                                         <label for="lb_asignatura">Asignatura:</label>
-                                </div>  
-                                    <div class="col-sm-4">
-                                        <label for="lb_f_fin">Fecha de fin:</label>
-                                        <input type="date" name="date" id="fechaFin" min="<?php echo date("(Y-m-d)");?>" class="form-control" disabled><br>
-                                        <label for="lb_cod_asig">Codigo Asignatura:</label>
+                                        <input type="text" name="asignatura" id="id_txtasignatura" value="Asignatura" class="form-control" style="text-align:center;" disabled>
                                     </div>  
                                     <div class="col-sm-4">
-                                        <label for="lb_curso">Curso:</label><br>
+                                        <label for="lb_f_fin">Fecha de fin:</label>
+                                        <input type="text" name="ffin" id="id_fechaFin" value="" class="form-control" style="text-align:center;" disabled><br>
+                                        <label for="lb_cod_asig">Codigo Asignatura:</label>
+                                        <input type="text" name="codigoAsig" id="id_txtcodigoasig" value="Codigo Asignatura" class="form-control" style="text-align:center;" disabled>
+                                    </div>
+                                    <!-- Dentro de la columna 3, 2 columnas para (Curso y Paralelo)-->  
+                                    <div class="col-sm-4">
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                            <label for="lb_curso">Curso:</label>
+                                            <input type="text" name="curso" id="id_txtcurso" value="" class="form-control" style="text-align:center;" disabled><br>
+                                            </div>  
+                                            <div class="col-sm-5">
+                                            <label for="lb_paralelo">Paralelo:</label>
+                                            <input type="text" name="paralelo" id="id_txtparalelo" value="" class="form-control" style="text-align:center;" disabled><br>
+                                            </div>  
+                                        </div>
                                         <label for="lb_docente">Docente:</label>
-                                        <label class="form-label" id="lbunidad">Unidad</label>
+                                        <input type="text" name="docente" id="id_txtdocente" value="Docente" class="form-control" style="text-align:center;" disabled>
                                     </div>  
                                 </div>
                                 <br>
